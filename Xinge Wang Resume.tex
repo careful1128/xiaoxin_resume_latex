@@ -1,0 +1,160 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx} 
+
+\geometry{a4paper,left=0.75cm,right=0.75cm,top=0.75cm,bottom=0.75cm}
+\setmainfont{Times New Roman}
+\setmonofont{Courier New}
+
+\definecolor{sectioncolor}{RGB}{40,40,150}
+\titleformat{\section}{\large\bfseries\color{sectioncolor}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{sectioncolor}}{\thesubsection}{1em}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,     
+    urlcolor=cyan,
+}
+
+\begin{document}
+
+\section*{Xinge Wang (王心舸)}
+\subsection*{Algorithm Engineer}
+
+\begin{figure}[h!]
+    \begin{minipage}[c]{0.7\textwidth}  % 左侧文字区域（占70%宽度）
+        \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+            \item \textbf{Gender}: Female 
+            \item \textbf{Location}: Shanghai
+            \item \textbf{Hometown}: Longnan, Gansu Province  
+            \item \textbf{Birth}: 1998.10
+            \item \textbf{Phone}: (+86) 15101203394
+            \item \textbf{Email}: \href{mailto:xiaoxinrejoice@gmail.com}{xiaoxinrejoice@gmail.com} 
+            \item \textbf{GitHub}: \href{https://github.com/careful1128}{github.com/careful1128}
+        \end{itemize}
+    \end{minipage}%
+    \hfill  % 填充剩余空间，将图片推到最右
+    \begin{minipage}[c]{0.25\textwidth}  % 右侧图片区域（占25%宽度）
+        \raggedleft  % 图片右对齐
+        \includegraphics[width=2.5cm, height=3.5cm]{whitexiaoxin.jpg} 
+    \end{minipage}
+\end{figure}
+
+\section*{教育背景}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=3pt]
+    \item \textbf{2016-09 \textasciitilde\ 2020-07} \\
+    \begin{minipage}[t]{\linewidth}
+        甘肃政法大学
+        \hfill
+        计算机科学与技术
+    \end{minipage}
+\end{itemize}
+
+\section*{工作经历}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=3pt]
+    \item 
+    \begin{minipage}[c]{0.1\textwidth}
+        \includegraphics[width=\linewidth,keepaspectratio]{deepblue.jpg}
+    \end{minipage}%
+    \hspace{0.5em}%
+    \begin{minipage}[c]{0.18\textwidth}
+        \textbf{2021-03 \textasciitilde\ 2022-12}
+    \end{minipage}%
+    \begin{minipage}[c]{0.45\textwidth}
+        深兰（上海）科技有限公司
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[c]{0.25\textwidth}
+        \raggedleft 视觉算法工程师
+    \end{minipage}
+    
+    \item 
+    \begin{minipage}[c]{0.1\textwidth}
+        \includegraphics[width=\linewidth,keepaspectratio]{hozon.jpg}
+    \end{minipage}%
+    \hspace{0.5em}%
+    \begin{minipage}[c]{0.18\textwidth}
+        \textbf{2023-02 \textasciitilde\ 2024-08}
+    \end{minipage}%
+    \begin{minipage}[c]{0.45\textwidth}
+        哪吒智合新能源汽车科技（上海）有限公司
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[c]{0.25\textwidth}
+        \raggedleft 算法开发工程师
+    \end{minipage}
+    
+    \item 
+    \begin{minipage}[c]{0.1\textwidth}
+        \includegraphics[width=\linewidth,keepaspectratio]{zeekr.jpg}
+    \end{minipage}%
+    \hspace{0.5em}%
+    \begin{minipage}[c]{0.18\textwidth}
+        \textbf{2024-09 \textasciitilde\ 2025-02}
+    \end{minipage}%
+    \begin{minipage}[c]{0.35\textwidth}
+        极氪智能科技（上海）有限公司
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[c]{0.35\textwidth}
+        \raggedleft 智能驾驶算法评测开发工程师
+    \end{minipage}
+\end{itemize}
+
+\section*{技能特长}
+\begin{itemize}[leftmargin=*]
+    \item \textbf 熟悉Linux/ROS环境下的编程开发
+    \item \textbf 熟悉bev、CNN、RNN、Transformer等模型，应用于计算机视觉、自然语言处理等领域
+    \item \textbf 熟悉xgboost、lightgbm等模型，应用于决策定位，预测等领域
+    \item \textbf 了解模型在NVDIA平台上的训练、剪切、量化、部署流程
+    \item \textbf 了解tensorrt和cuda
+    \item \textbf 熟悉卡尔曼滤波及其变种和匈牙利算法、数据关联、航迹管理、滤波更新
+    \item \textbf 了解多传感器（包括IMU、GNSS、轮速、camera等）的融合定位算法
+    \item \textbf 工具:PyTorch、Git、Docker、CMake、Python、C++、OpenCV、ROS、TensorFlow
+\end{itemize}
+
+\section*{项目经验}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{orin平台基于MHT框架的行车融合开发} \\
+    \textbf{项目简介}：将传感器数据融合为高精度的环境感知信息。通过整合来自bev的障碍物，车道线、occ、和radar的数据，用马氏距离和lgbm（决策树）可学习的方式分别进行流速关联，对位置、速度、尺寸进行融合滤波，输出下游需要的环境信息和决策支持。 \\
+    \textbf{项目成果}：输出符合产品定义的可供下游做nnp、ncp、acc、aeb和其他预警功能的障碍物的位置、速度、尺寸等环境信息。
+    
+    \item \textbf{mdc平台基于apollo框架的行车融合开发} \\
+    \textbf{项目简介}：将传感器数据融合为高精度的环境感知信息。它通过整合来自激光雷达、雷达、摄像头等多种传感器的数据，实现对周围环境的全面感知和理解。从而为下游提供准确的环境模型和决策支持。 \\
+    \textbf{项目成果}：完成从0到1的后融合框架搭建，输出符合产品定义的可供下游做nnp、ncp、acc、aeb和其他预警功能的障碍物的位置、速度、尺寸等环境信息。
+    
+    \item \textbf{基于attentionU-Net的农业机器人的作物行检测} \\
+    \textbf{项目简介}：本项目基于Unet的语义分割方法在移动机器人遇到的不同场景下作物行检测的鲁棒性。使用各种现场条件下遇到的十个主要类别的数据集进行测试。比较了这些条件对作物行检测质量的影响。 \\
+    \textbf{主要工作}：模型的整体结构是正面的网络结构基础上，添加attention gate、CBAM、SEnet、ECA等注意力机制，添加deeplabv3网络中ASPP等模块，并使用efficiente轻量型网络结构提升网络训练速度的同时提供精度。 \\
+    \textbf{项目成果}：最终选用Attention U-Net进行5折交叉验证，以便更好地进行比较，作物行实现了dice = 72.01 ± 6。 \\
+    \textbf{代码仓库}：\url{https://github.com/careful1128/crop-row-attention-unet}
+    
+    \item \textbf{农业机器人多传感器导航定位系统} \\
+    \textbf{项目简介}：自定位能力是无人地面车辆(ugv)在农业应用中的重要组成部分。我们的的方法同时减轻了运动估计系统(车轮里程数,视觉里程数等)引入的累积误差，以及原始GPS读数带来的噪音。除了合适的运动模型，系统还集成了两种附加类型的约束(小数字高程模型和引导式)可视化场景。 \\
+    \textbf{主要工作}：以低成本的gps实现高水平的精度。我们通过调整每个传感器的特征以适应农业场景的特殊性，以一种有效的方式，将各种不同的传感器集成到一个姿态图中。 \\
+    \textbf{项目成果}：优化中包括新提出的约束的积累影响当使用有噪声的GPS (PPPGPS)情况下时，ELEV和MRF线条单独集成导致泊水的估计有显著改善。另一个显著的结果是误差的下限趋势，几乎是单调的我们在优化过程中引入的传感器越多，得到的RMS and Max误差就越小。
+
+    \item \textbf{模型直出引导线算法评测框架代码开发} \\
+    \textbf{项目简介}：在高阶智驾领域中模型直出引导线位置精度，稳定性，自洽性，和是否误入逆向车道的评测代码的搭建与开发工作，推动算法性能上线 \\
+    \textbf{主要工作}：引导线直出模型的前20m利用差值函数拟合出真值与直出模型的引导线做评测项的开发，推动引导线在NOA功能下路口换道的稳定性和正确性 \\
+    \textbf{项目成果}：推动引导线在NOA功能下性能上线，提升路口换道coner case 的问题解决率，维护算法稳定交付城区NOA功能。
+
+\end{itemize}
+
+\section*{荣誉证书}
+\begin{itemize}[leftmargin=*]
+    \item CET4/CET6，能够熟练的进行交流、读写。
+    \item 计算机四级网络工程师证书
+\end{itemize}
+
+\section*{自我评价}
+积极乐观良好的适应组织能力,自驱力,热爱学习！爱好游泳，唱歌，热爱生活！
+
+\end{document}

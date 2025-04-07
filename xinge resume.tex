@@ -1,0 +1,159 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx} 
+
+\geometry{a4paper,left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm}
+\setmainfont{Times New Roman}
+\setmonofont{Courier New}
+
+\definecolor{sectioncolor}{RGB}{40,40,150}
+\titleformat{\section}{\large\bfseries\color{sectioncolor}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{sectioncolor}}{\thesubsection}{1em}{}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,     
+    urlcolor=cyan,
+}
+
+\begin{document}
+
+\section*{Xinge Wang (王心舸)}
+\subsection*{Algorithm Engineer}
+
+\begin{figure}[h!]
+    \begin{minipage}[c]{0.7\textwidth}  % Left text area (70% width)
+        \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+            \item \textbf{Gender}: Female 
+            \item \textbf{Location}: Shanghai
+            \item \textbf{Hometown}: Longnan, Gansu Province  
+            \item \textbf{Birth}: 1998.10
+            \item \textbf{Phone}: (+86) 15101203394
+            \item \textbf{Email}: \href{mailto:xiaoxinrejoice@gmail.com}{xiaoxinrejoice@gmail.com} 
+            \item \textbf{GitHub}: \href{https://github.com/careful1128}{github.com/careful1128}
+        \end{itemize}
+    \end{minipage}%
+    \hfill  % Fill remaining space
+    \begin{minipage}[c]{0.25\textwidth}  % Right image area (25% width)
+        \raggedleft  % Right-align image
+        \includegraphics[width=2.5cm, height=3.5cm]{whitexiaoxin.jpg} 
+    \end{minipage}
+\end{figure}
+
+\section*{Education}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=3pt]
+    \item \textbf{2016-09 \textasciitilde\ 2020-07} \\
+    \begin{minipage}[t]{\linewidth}
+        Gansu University of Political Science and Law
+        \hfill
+        Computer Science and Technology
+    \end{minipage}
+\end{itemize}
+
+\section*{Work Experience}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=3pt]
+    \item 
+    \begin{minipage}[c]{0.1\textwidth}
+        \includegraphics[width=\linewidth,keepaspectratio]{deepblue.jpg}
+    \end{minipage}%
+    \hspace{0.5em}%
+    \begin{minipage}[c]{0.18\textwidth}
+        \textbf{2021-03 \textasciitilde\ 2022-12}
+    \end{minipage}%
+    \begin{minipage}[c]{0.45\textwidth}
+        DeepBlue Technology (Shanghai) Co., Ltd.
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[c]{0.25\textwidth}
+        \raggedleft Computer Vision Algorithm Engineer
+    \end{minipage}
+    
+    \item 
+    \begin{minipage}[c]{0.1\textwidth}
+        \includegraphics[width=\linewidth,keepaspectratio]{hozon.jpg}
+    \end{minipage}%
+    \hspace{0.5em}%
+    \begin{minipage}[c]{0.18\textwidth}
+        \textbf{2023-02 \textasciitilde\ 2024-08}
+    \end{minipage}%
+    \begin{minipage}[c]{0.45\textwidth}
+        NETA Auto (Shanghai) Co., Ltd.
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[c]{0.25\textwidth}
+        \raggedleft Algorithm Development Engineer
+    \end{minipage}
+    
+    \item 
+    \begin{minipage}[c]{0.1\textwidth}
+        \includegraphics[width=\linewidth,keepaspectratio]{zeekr.jpg}
+    \end{minipage}%
+    \hspace{0.5em}%
+    \begin{minipage}[c]{0.18\textwidth}
+        \textbf{2024-09 \textasciitilde\ 2025-02}
+    \end{minipage}%
+    \begin{minipage}[c]{0.35\textwidth}
+        Zeekr Intelligent Technology (Shanghai) Co., Ltd.
+    \end{minipage}%
+    \hfill%
+    \begin{minipage}[c]{0.35\textwidth}
+        \raggedleft Intelligent Driving Algorithm Evaluation Engineer
+    \end{minipage}
+\end{itemize}
+
+\section*{Technical Skills}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Proficient} in Linux/ROS environment programming and development
+    \item \textbf{Experienced} with bev, CNN, RNN, Transformer models for computer vision and NLP applications
+    \item \textbf{Skilled} in xgboost, lightgbm for decision-making and prediction tasks
+    \item \textbf{Knowledgeable} about model training, pruning, quantization and deployment on NVIDIA platforms
+    \item \textbf{Familiar} with TensorRT and CUDA acceleration
+    \item \textbf{Expertise} in Kalman Filter variants, Hungarian algorithm, data association and track management
+    \item \textbf{Understanding} of multi-sensor (IMU, GNSS, wheel speed, camera) fusion algorithms
+    \item \textbf{Tools}: PyTorch, Git, Docker, CMake, Python, C++, OpenCV, ROS, TensorFlow
+\end{itemize}
+
+\section*{Project Experience}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Orin Platform-based Vehicle Fusion Development Using MHT Framework} \\
+    \textbf{Project Description}: Developed high-precision environmental perception by fusing sensor data including obstacles, lane lines, occupancy grids and radar data from Dev system. Implemented Mahalanobis distance and learnable LGBM (decision tree) methods for data association, performing fusion filtering of position, velocity and dimensions to provide environmental information for downstream decision support. \\
+    \textbf{Achievements}: Delivered standardized obstacle information (position, velocity, dimensions) for downstream ADAS functions including NNP, NCP, ACC and AEB.
+    
+    \item \textbf{MDC Platform-based Vehicle Fusion Development Using Apollo Framework} \\
+    \textbf{Project Description}: Created comprehensive environmental perception system by integrating data from LiDAR, radar, cameras and other sensors to provide accurate environmental models and decision support. \\
+    \textbf{Achievements}: Completed end-to-end post-fusion framework development, delivering obstacle information meeting product specifications for various ADAS functions.
+    
+    \item \textbf{Crop Row Detection for Agricultural Robots Using Attention U-Net} \\
+    \textbf{Project Description}: Enhanced robustness of crop row detection under diverse field conditions using semantic segmentation based on U-Net architecture. Evaluated performance across ten major field condition categories. \\
+    \textbf{Key Contributions}: Improved network architecture with attention mechanisms (attention gate, CBAM, SENet, ECA) and ASPP modules from DeepLabv3, while implementing EfficientNet for lightweight structure. \\
+    \textbf{Results}: Achieved dice score of 72.01 ± 6 in 5-fold cross-validation for crop row detection. \\
+    \textbf{Code Repository}: \url{https://github.com/careful1128/crop-row-attention-unet}
+    
+    \item \textbf{Multi-Sensor Navigation System for Agricultural Robots} \\
+    \textbf{Project Description}: Developed self-localization system for agricultural UGVs that addresses cumulative errors from motion estimation systems (wheel odometry, visual odometry) while filtering GPS noise. Incorporated DEM and visual guidance constraints. \\
+    \textbf{Key Contributions}: Achieved high-precision localization with cost-effective GPS through optimized sensor fusion tailored for agricultural applications. \\
+    \textbf{Results}: Significant improvement in pose estimation accuracy, showing nearly monotonic error reduction with additional sensor integration.
+    
+    \item \textbf{Evaluation Framework for Model-Generated Guidance Lines} \\
+    \textbf{Project Description}: Developed comprehensive evaluation framework assessing position accuracy, stability, consistency and wrong-way detection of model-generated guidance lines for autonomous driving systems. \\
+    \textbf{Key Contributions}: Created evaluation metrics comparing ground truth with model output using interpolation for the first 20m, enhancing lane change stability at intersections for NOA functionality. \\
+    \textbf{Achievements}: Improved guidance line performance for urban NOA, increasing corner case resolution rate and ensuring algorithm stability.
+\end{itemize}
+
+\section*{Certifications}
+\begin{itemize}[leftmargin=*]
+    \item CET-4/CET-6 with fluent English communication skills
+    \item National Computer Rank Examination Level 4 (Network Engineer)
+\end{itemize}
+
+\section*{Self-Evaluation}
+Positive and adaptable professional with strong organizational skills, self-motivation, and passion for continuous learning. Enjoy swimming and singing with great enthusiasm for life!
+
+\end{document}
